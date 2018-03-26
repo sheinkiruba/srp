@@ -2,23 +2,23 @@
 #include<string.h>
  int main()
 {
-char a[25];
-int i,j,n,t=0;
-printf("\n Enter the phrase..:");
-scanf("%s",a);
-n=strlen(a);
+char k[25];
+int i,j,n,v=0;
+printf("\n Enter the phrase:");
+scanf("%s",k);
+n=strlen(k);
 for(i=0;i<n;i++)
 {
 for(j=i+1;j<n;j++)
 {
-if(a[i]==a[j])
+if(k[i]==k[j])
 {
-t++;
+v++;
 break;
 }   
 }
 }
-if(t==0)
+if(v==0)
 printf("YES");
 else
 printf("NO");
